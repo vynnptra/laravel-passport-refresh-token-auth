@@ -5,9 +5,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Laravel\Passport\Passport;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
 
 Route::middleware('guest')->group( function () {
     Route::post('/register', [AuthController::class, 'register']);
@@ -20,9 +17,7 @@ Route::middleware('auth:api')->group( function () {
     Route::get('/profile', [AuthController::class, 'profile']);
     Route::get('/dashboard', function () {
         return response()->json([
-            'message' => 'Hello World',
+            'message' => 'Hello World!',
         ], 200);
     });
 });
-
-// Passport::routes();
