@@ -1,5 +1,5 @@
 ```markdown
-# Laravel Passport Refresh Token Tutorial
+# Laravel Passport Refresh Token
 
 > Learning OAuth2 with Laravel Passport and Refresh Tokens
 
@@ -12,7 +12,6 @@ This is a learning project that demonstrates how to implement **Laravel Passport
 - Token revocation
 - Protected API routes
 - User login & logout handling
-- Clean and readable code for learning purposes
 
 ## 🛠️ Stack
 
